@@ -6,7 +6,7 @@ import * as actions from '../actions';
 import NavBar from './NavBar';
 import Landing from './Landing';
 import Dashboard from './Dashboard';
-import SurveyNew from './SurveyNew';
+import SurveyNew from '../components/Survey/SurveyNew';
 
 class App extends Component {
     componentDidMount() {
