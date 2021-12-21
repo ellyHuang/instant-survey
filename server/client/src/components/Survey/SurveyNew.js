@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { reduxForm } from 'redux-form';
 
-import SurveyForm from './SurveyForm';
-import SurveyFormReview from './SurveyFormReview';
+import SurveyForm from './SurveyForm/SurveyForm';
+import SurveyFormReview from './SurveyFormReview/SurveyFormReview';
 
 class SurveyNew extends Component {
     constructor(props) {

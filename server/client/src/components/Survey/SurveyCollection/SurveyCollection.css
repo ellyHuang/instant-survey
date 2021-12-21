@@ -1,0 +1,14 @@
+.card{
+    border-radius:10px;
+}
+
+.card-action>.positive-color{
+    color: rgba(255, 102, 52, 0.8) !important;
+}
+.card-action>.negative-color{
+    color: rgba(68,84,107, 0.8) !important;
+}
+
+a{
+    font-weight: bold;
+}

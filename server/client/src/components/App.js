@@ -3,9 +3,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
 
-import NavBar from './NavBar';
-import Landing from './Landing';
-import Dashboard from './Dashboard';
+import './App.css';
+import NavBar from './NavBar/NavBar';
+import Landing from './Landing/Landing';
+import Dashboard from './DashBoard/Dashboard';
 import SurveyNew from '../components/Survey/SurveyNew';
 
 class App extends Component {
@@ -20,7 +21,7 @@ class App extends Component {
                     <NavBar />
                     <Routes>
                         <Route path="/" element={ <Landing /> } />
-                        <Route path="/surveys" element={ <Dashboard /> } />
+                        <Route path="/surveys" element={ <Dashboard /> }/>
                         <Route path="/surveys/new" element={ <SurveyNew /> } />
                     </Routes>
                 </Router>

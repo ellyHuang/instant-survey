@@ -1,14 +1,21 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchSurveys } from '../../actions';
+import { fetchSurveys } from '../../../actions';
+
+import ResultBar from '../resultBar';
+import './SurveyCollection.css';
 
 class SurveyCollection extends Component {
     componentDidMount() {
         this.props.fetchSurveys();
     }
 
+    componentDidUpdate(){
+        this.props.fetchSurveys();
+    }
+
     renderSurveys() {
-        return this.props.surveys.reverse().map(survey => {
+        return this.props.surveys.map(survey => {
             return(
                 <div className="card darken-1" key={survey._id}>
                     <div className="card-content">
@@ -17,8 +24,9 @@ class SurveyCollection extends Component {
                         <p className="right">Latest Response: { new Date(survey.lastResponded).toLocaleDateString() }</p>
                     </div>
                     <div className="card-action row">
-                        <a>Yes: {survey.positive}</a>
-                        <a>No: {survey.negative}</a>
+                        <a className="positive-color">Yes: {survey.positive}</a>
+                        <a className="negative-color">No: {survey.negative}</a>
+                        <ResultBar Yes={survey.positive} No={survey.negative} />
                     </div>
                 </div>
             )

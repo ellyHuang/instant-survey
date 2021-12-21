@@ -26,7 +26,7 @@ passport.use(new GoogleStrategy({
     User.findOne({googleId: profile.id})
      .then(existingUser => {
        existingUser ? done (null, existingUser) : 
-       new User({ googleId: profile.id }).save().then( user=> done(null, user) );
+       new User({ googleId: profile.id, name: profile.displayName}).save().then( user=> done(null, user) );
      });
     }
   )

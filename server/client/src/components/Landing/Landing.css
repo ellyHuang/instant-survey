@@ -1,0 +1,45 @@
+.landingPage{
+    margin-left: 0;
+    margin-top: 50px;
+}
+
+h1 {
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+    text-shadow: #eceff1 0.1em 0.1em 0.5em;;
+}
+
+li{
+    list-style: none;
+}
+
+.login-btn {
+    display: block;
+    text-transform: capitalize;
+    text-align: center;
+    color:#313c4b;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 50px;
+    width: 300px;
+    justify-items: center;
+    align-items: center;
+    border-radius: 100px;
+    opacity: 0.9;
+    background-color: #ff6634;
+}
+
+.login-btn:hover {
+    color: white !important;
+    background-color: #44546b;
+    opacity: 0.9;
+}
+
+.particles {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}

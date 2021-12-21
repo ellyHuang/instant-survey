@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import AddCredits from './AddCredits';
+import AddCredits from '../AddCredits/AddCredits';
 
-import logo from '../assets/logo.png';
+import './NavBar.css';
+import logo from '../../assets/Logo.png';
 
 class NavBar extends Component {
     renderContent() {
@@ -15,7 +16,7 @@ class NavBar extends Component {
             default:
                 return [
                     <li key="0"><AddCredits/></li>,
-                    <li key="1" style={{margin:'0 10px'}}>Credits：{this.props.auth.credits}</li>,
+                    <li key="1" style={{margin:"0 10px"}}>Credits：{this.props.auth.credits}</li>,
                     <li key="2"><a href="api/logout">Logout</a></li>
                 ];
         }
@@ -23,10 +24,10 @@ class NavBar extends Component {
 
     render(){
         return (
-            <nav>
-                <div className="nav-wrapper">
+            <nav className='N/A transparent cool-navbar z-depth-0'>
+                <div  className="nav-wrapper">
                     <Link to={ this.props.auth ? '/surveys' : '/'}>
-                        <img src={logo} width="65" height="auto" alt="logo"/>
+                        <img src={logo} width='auto' height='55' alt='logo' className='logo'/>
                     </Link>
                     <ul id="nav-mobile" className="right hide-on-med-and-down">
                         {this.renderContent()}   

@@ -3,9 +3,10 @@ import { reduxForm, Field } from 'redux-form';
 import { Link } from 'react-router-dom';
 import _ from 'lodash';
 
-import SurveyField from './SurveyField';
-import SurveyFieldContent from './SurveyFieldContent';
-import validateEmails from '../../utils/validateEmails';
+import SurveyField from '../SurveyField/SurveyField';
+import SurveyFieldContent from '../SurveyFieldContent';
+import validateEmails from '../../../utils/validateEmails';
+import './SurveyForm.css';
 
 class SurveyForm extends Component {
     constructor(props){
@@ -13,17 +14,17 @@ class SurveyForm extends Component {
     };
 
     renderFields() {
-        return _.map(SurveyFieldContent, ({ label, name }) => {
-            return <Field key={name} label={label} type='text' name={name} component={SurveyField} />
+        return _.map(SurveyFieldContent, ({ label, name, note }) => {
+            return <Field key={name} label={label} type='text' name={name} note={note} component={SurveyField} />
         })
     }
 
     render() {
         return (
-            <div>
-                <h5> Create a new survey </h5>
+            <div className="outer-container">
+                <h5 className="create-survey"> Create a new survey </h5>
                 <form onSubmit={this.props.handleSubmit( this.props.onSurveySubmit )}>
-                    {this.renderFields()}
+                    <div>{this.renderFields()}</div>
                     <Link to='/surveys' className='btn waves-effect waves-light grey lighten-2 black-text'>CANCEL</Link>
                     <button className='btn waves-effect waves-light right' type='submit'><i className="material-icons right">chevron_right</i>Next</button>
                 </form>

@@ -1,0 +1,11 @@
+.create-survey{
+    text-align: center;
+}
+.outer-container{
+    margin: 0 15px;
+}
+.survey-form{
+    background-color: rgb(255, 255, 255, 0.3);
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}

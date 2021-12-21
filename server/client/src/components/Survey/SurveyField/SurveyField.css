@@ -1,0 +1,18 @@
+label{
+    font-size:20px;
+    color: #0097a7;
+}
+
+input{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.red-text{
+    margin-bottom: '20px'
+}
+
+::placeholder {
+    font-size:12px;
+    color: #44546b;
+    opacity: 0.7; 
+}

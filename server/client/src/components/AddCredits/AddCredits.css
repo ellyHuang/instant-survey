@@ -1,0 +1,13 @@
+.btn{
+    background-color: #ff6634;
+    border-radius: 100px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.btn:hover{
+    background-color: #ff6634;
+}
+
+.btn:active {
+    background-color: #ff6634;
+}

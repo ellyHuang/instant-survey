@@ -1,0 +1,16 @@
+nav {
+    margin-top: 15px;
+    position: relative;
+}
+
+nav ul a:hover {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+a:hover{
+    color: #ff6634 !important;
+}
+
+.logo{
+    margin-top: 9px;
+}
