@@ -10,10 +10,6 @@ class SurveyCollection extends Component {
         this.props.fetchSurveys();
     }
 
-    componentDidUpdate(){
-        this.props.fetchSurveys();
-    }
-
     renderSurveys() {
         return this.props.surveys.map(survey => {
             return(

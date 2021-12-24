@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import AddCredits from '../AddCredits/AddCredits';
 
 import './NavBar.css';
-import logo from '../../assets/Logo.png';
+import logo from '../../assets/LogoMid.png';
 
 class NavBar extends Component {
     renderContent() {
