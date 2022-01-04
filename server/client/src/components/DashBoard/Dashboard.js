@@ -24,9 +24,9 @@ class Dashboard extends Component {
                     {this.renderName()}
                 </div>
                 <SurveyCollection />
-                <div class="fixed-action-btn">
+                <div className="fixed-action-btn">
                     <Link to='/surveys/new' class="btn-floating btn-large orange darken-4">
-                        <i class="large material-icons">add</i>
+                        <i className="large material-icons">add</i>
                     </Link>
                 </div>
             </div>

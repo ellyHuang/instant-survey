@@ -14,3 +14,26 @@ a:hover{
 .logo{
     margin-top: 9px;
 }
+
+.introjs-tooltipReferenceLayer * {
+    font-family: "Courier New", Inter, ui-sans-serif, "Apple Color Emoji", Helvetica, Arial, sans-serif;
+}
+
+.introjs-tooltip {
+    box-sizing: content-box;
+    position: absolute;
+    visibility: visible;
+    background-color: #ffffff;
+    min-width: 250px;
+    max-width: 600px;
+    border-radius: 5px;
+    opacity: 0.8;
+    box-shadow: 0 3px 30px rgb(33 33 33 / 30%);
+    transition: opacity 0.1s ease-out;
+    width: 465px;
+}
+
+.introjs-tooltip span{
+    color:#ff6634;
+    font-weight: bold;
+}

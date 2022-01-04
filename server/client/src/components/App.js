@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
+import { Hints } from 'intro.js-react';
 
 import './App.css';
 import NavBar from './NavBar/NavBar';
 import Landing from './Landing/Landing';
 import Dashboard from './DashBoard/Dashboard';
 import SurveyNew from '../components/Survey/SurveyNew';
+import 'intro.js/introjs.css'; 
 
 class App extends Component {
     componentDidMount() {
